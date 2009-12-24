@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: site-map.xml
+Sitemap: sitemap.xml.gz

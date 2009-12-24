@@ -6,8 +6,7 @@
  *	@project	lizandthomasaregettingmarried.ca
  *	@author		Thomas J Bradley <theman@thomasjbradley.ca>
  *	@link		http://thomasjbradley.ca
- *	@copyright	2009- Thomas J Bradley
- *	@version	$Id: general.css 36 2009-05-12 16:13:36Z thomasjbradley $
+ *	@copyright	MMIX- Thomas J Bradley
  *	
  *	@colordef	#8f87be; purple, background
  *	@colordef	#98cdcd; aqua, background
@@ -20,29 +19,16 @@
  */
 @media screen,print {
 
-html {
-	height: 100%;
+body {
 	margin: 0;
-	overflow: auto;
 	padding: 0;
 	
 	background: #8f87be url("../images/bg-purple.gif") repeat left top;
 	
 	color: #fff;
-	font: normal 100.01%/137.5% Georgia,Times,"Times New Roman",serif;
-	}
-
-body {
-	height: auto;
-	margin: 0 auto;
-	min-height: 100%;
-	padding: 0;
-	position: relative;
-	width: 980px;
-	}
+	font: normal 100.01%/137.5% Georgia,Times,"Times New Roman",serif;	}
 	
-} /* END MEDIA: screen,print */	
-
+}
 
 
 /**
@@ -50,11 +36,18 @@ body {
  */
 @media screen {
 
+#section {
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	width: 1010px;
+	}
+
 #graphics {
 	display: inline;
 	float: left;
 	height: 285px;
-	margin: 300px 0 0 0;
+	margin: 150px 0 0 0;
 	padding: 0;
 	width: 510px;
 	}
@@ -83,169 +76,8 @@ body {
 	padding: 0 0 0 62px;
 	width: 408px;
 	}
-	
-form,
-.rsvp-wrapper {
-	clear: both;
-	margin: 0;
-	padding: 2em 0;
-	
-	font-size: 1.875em;
-	}
-	
-.rsvp-box {
-	margin: 0;
-	padding: 0.5em 0.5em;
-	
-	background: transparent url("../images/form-bg.png") repeat left top;
-	border: 0;
-	border-radius: 0.3em;
-	-webkit-border-radius: 0.3em;
-	-moz-border-radius: 0.3em;
-	}
-	
-	.rsvp-box p {
-		margin: 0;
-		padding: 0;
-		}
-	
-legend {
-	display: none;
-	}
 
-label {
-	vertical-align: middle;
-	}
-
-input {
-	vertical-align: middle;
-	
-	font: normal 1em/1.375em Georgia,Times,"Times New Roman",serif;
-	}
-	
-input[type="text"] {
-	margin: 0 0 0 0.2em;
-	padding: 0.2em;
-	
-	border: 2px solid #fff;
-	border-radius: 0.3em;
-	-webkit-border-radius: 0.3em;
-	-moz-border-radius: 0.3em;
-	
-	color: #fff;
-	}
-
-button {
-	margin: 0;
-	padding: 0.2em 0.5em;
-	
-	border: 2px solid #fff;
-	border-radius: 0.3em;
-	-webkit-border-radius: 0.3em;
-	-moz-border-radius: 0.3em;
-	cursor: pointer;
-	
-	color: #fff;
-	font: normal 1em/1.375em Georgia,Times,"Times New Roman",serif;
-	}
-	
-	form div {
-		display: inline;
-		float: left;
-		margin: 0 0 0 15px;
-		min-height: 1.5em;
-		padding: 0 15px 0 0;
-		position: relative;
-		}
-		
-	form div#key-wrapper {
-		margin: 0;
-		}
-		
-	form div.radio {
-		margin-top: -0.2em;
-		
-		line-height: 1em;
-		}
-		
-	form div#buttons {
-		clear: both;
-		display: block;
-		float: none;
-		padding: 0.5em 0 0;
-		
-		border: 0;
-		
-		font-size: 1.3em;
-		text-align: center;
-		}
-		
-	form div#guests-wrapper {
-		border: 0;
-		}
-		
-	form div#attending-wrapper {
-		padding-right: 0;
-		
-		border: 0;
-		}
-		
-	form #not-attending-wrapper {
-		border-right: 1px solid #fff;
-		}
-		
-	form .help {
-		left: 0;
-		margin: -7.7em 0 1em 0;
-		padding: 0.8em;
-		position: absolute;
-		top: 3em;
-		width: 15em;
-		z-index: 1000;
-		
-		background-color: #fff;
-		border-radius: 0.3em;
-		-webkit-border-radius: 0.3em;
-		-moz-border-radius: 0.3em;
-		
-		font-size: 0.6875em;
-		line-height: 1.375em;
-		}
-		
-	form .hide {
-		display: none;
-		}
-
-	.error {
-		display: block;
-		left: 0;
-		margin: 1.2em 0 1em 0;
-		padding: 0.8em 0.8em 0.8em 1.8em;
-		position: absolute;
-		width: 13.2em;
-		
-		background: #ffc url("../images/error.png") no-repeat 0.3em center;
-		border-radius: 0.3em;
-		-webkit-border-radius: 0.3em;
-		-moz-border-radius: 0.3em;
-
-		color: #f33;
-		font-size: 0.6875em;
-		font-weight: bold;
-		line-height: 1.375em;
-		}
-		
-	.down {
-		margin-top: -6em;
-		background-image: url("../images/error-down.png");
-		}
-	
-	.attending {
-		margin-left: 3em;
-		}
-
-} /* END MEDIA: screen */
-
+}
 
 
 /**
@@ -257,25 +89,8 @@ h1 {
 	margin: 0 0 35px -62px;
 	padding: 0;
 	}
-	
-p {
-	margin: 0 0 1.375em 0;
-	padding: 0;
-	
-	font-size: 1.5em;
-	line-height: 1.375em;
-	}
 
-.details {
-	margin: 0;
-	padding: 0;
-	
-	font-size: 1em;
-	line-height: 1.375em;
-	}
-	
-} /* END MEDIA: screen,print */
-
+}
 
 
 /**
@@ -297,4 +112,171 @@ img {
 	width: 470px;
 	}
 	
-} /* END MEDIA: screen,print */
+}
+
+/**
+ *	@section	Misc
+ */
+
+@media screen,print {
+
+#photos {
+	clear: both;
+	margin: 0;
+	padding: 45px 0 45px;
+	}
+
+.scroll-wrap {
+	margin: 0;
+	overflow: hidden;
+	padding-left: 35px;
+	}
+
+.js-active .scroll-wrap {
+	position: relative;
+	}
+
+.js-active .scrollable {
+	height: 500px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	
+	background-color: rgba(0,0,0,0.5);
+	}
+	
+	.scrollable ul {
+		margin: 0;
+		padding: 0;
+		
+		list-style-type: none;
+		}
+	
+	.js-active .scrollable ul {
+		left: 0;
+		position: absolute;
+		width: 20000em;
+		}
+		
+		.scrollable ul li {
+			display: inline;
+			float: left;
+			height: 500px;
+			margin: 0 5px 5px 5px;
+			padding: 0;
+			position: relative;
+			}
+		
+		.js-active .scrollable li {
+			display: inline;
+			float: left;
+			margin: 0;
+			
+			border: 0;
+			opacity: 0.9;
+			}
+			
+		.js-active .scrollable li.active,
+		.js-active .scrollable li:hover {
+			opacity: 1;
+			}
+		
+		.js-active .scrollable img {
+			cursor: pointer;
+			}
+
+a#prev,
+a#next {
+	display: none;
+	}
+
+.js-active a#prev,
+.js-active a#prev:link,
+.js-active a#prev:visited,
+.js-active a#next,
+.js-active a#next:link,
+.js-active a#next:visited {
+	display: block;
+	height: 500px;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 40px;
+	z-index: 100;
+	
+	background-color: #fff;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	cursor: pointer;
+	
+	color: #2a2728;
+	}
+
+.js-active a#next,
+.js-active a#next:link,
+.js-active a#next:visited {
+	left: auto;
+	right: 0;
+
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	}
+
+.js-active a#prev span,
+.js-active a#next span {
+	display: block;
+	height: 25px;
+	margin: 240px 0 0 12px;
+	padding: 0;
+	overflow: hidden;
+	width: 14px;
+	
+	background: transparent url("../images/arrow.gif") no-repeat left top;
+	
+	text-indent: -999em;
+	}
+	
+.js-active a#prev span {
+	background-position: left bottom;
+	}
+	
+.js-active a#prev:hover,
+.js-active a#prev:focus,
+.js-active a#prev:active,
+.js-active a#next:hover,
+.js-active a#next:focus,
+.js-active a#next:active {
+	background-color: #2a2726;
+	}
+	
+.js-active a#prev:hover span,
+.js-active a#prev:focus span,
+.js-active a#prev:active span {
+	background-position: right bottom;
+	}
+	
+.js-active a#next:hover span,
+.js-active a#next:focus span,
+.js-active a#next:active span {
+	background-position: right top;
+	}
+	
+}
