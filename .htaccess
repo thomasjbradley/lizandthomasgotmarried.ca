@@ -1,0 +1,8 @@
+AddHandler php5-script .php
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+
+	RewriteCond %{HTTP_HOST} ^www\.lizandthomasaregettingmarried\.ca/?$ [NC]
+	RewriteRule ^(.*)$ http://lizandthomasaregettingmarried.ca/$1 [R=301,L]
+</IfModule>

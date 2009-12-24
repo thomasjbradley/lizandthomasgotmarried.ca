@@ -1,0 +1,25 @@
+form .error {
+	display: none;
+	}
+
+button {
+	display: none;
+	}
+	
+form div.radio {
+	padding-top: 0.1em;
+	}
+	
+.error {
+	clear: both;
+	margin: 0;
+	padding: 0 0 0 1em;
+	position: static;
+	width: 100%;
+	
+	font-size: 1.5em;
+	}
+	
+form .help {
+	display: none;
+	}

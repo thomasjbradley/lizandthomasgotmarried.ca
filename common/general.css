@@ -1,0 +1,300 @@
+/**
+ *	lizandthomasaregettingmarried.ca
+ *	Primary Screen and Print Styles
+ *	@media		screen,print
+ *	
+ *	@project	lizandthomasaregettingmarried.ca
+ *	@author		Thomas J Bradley <theman@thomasjbradley.ca>
+ *	@link		http://thomasjbradley.ca
+ *	@copyright	2009- Thomas J Bradley
+ *	@version	$Id: general.css 36 2009-05-12 16:13:36Z thomasjbradley $
+ *	
+ *	@colordef	#8f87be; purple, background
+ *	@colordef	#98cdcd; aqua, background
+ *	@colordef	#acd2a1; green, background
+ */
+
+
+/**
+ *	@section	General
+ */
+@media screen,print {
+
+html {
+	height: 100%;
+	margin: 0;
+	overflow: auto;
+	padding: 0;
+	
+	background: #8f87be url("../images/bg-purple.gif") repeat left top;
+	
+	color: #fff;
+	font: normal 100.01%/137.5% Georgia,Times,"Times New Roman",serif;
+	}
+
+body {
+	height: auto;
+	margin: 0 auto;
+	min-height: 100%;
+	padding: 0;
+	position: relative;
+	width: 980px;
+	}
+	
+} /* END MEDIA: screen,print */	
+
+
+
+/**
+ *	@section	Layout
+ */
+@media screen {
+
+#graphics {
+	display: inline;
+	float: left;
+	height: 285px;
+	margin: 300px 0 0 0;
+	padding: 0;
+	width: 510px;
+	}
+	
+	#graphics a {
+		display: inline;
+		float: left;
+		margin: 0;
+		padding: 0;
+		}
+		
+	#liz {
+		height: 300px;
+		width: 285px;
+		}
+
+	#thomas {
+		height: 300px;
+		width: 225px;
+		}
+	
+#content {
+	display: inline;
+	float: right;
+	margin: 60px 0 0 0;
+	padding: 0 0 0 62px;
+	width: 408px;
+	}
+	
+form,
+.rsvp-wrapper {
+	clear: both;
+	margin: 0;
+	padding: 2em 0;
+	
+	font-size: 1.875em;
+	}
+	
+.rsvp-box {
+	margin: 0;
+	padding: 0.5em 0.5em;
+	
+	background: transparent url("../images/form-bg.png") repeat left top;
+	border: 0;
+	border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	}
+	
+	.rsvp-box p {
+		margin: 0;
+		padding: 0;
+		}
+	
+legend {
+	display: none;
+	}
+
+label {
+	vertical-align: middle;
+	}
+
+input {
+	vertical-align: middle;
+	
+	font: normal 1em/1.375em Georgia,Times,"Times New Roman",serif;
+	}
+	
+input[type="text"] {
+	margin: 0 0 0 0.2em;
+	padding: 0.2em;
+	
+	border: 2px solid #fff;
+	border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	
+	color: #fff;
+	}
+
+button {
+	margin: 0;
+	padding: 0.2em 0.5em;
+	
+	border: 2px solid #fff;
+	border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	cursor: pointer;
+	
+	color: #fff;
+	font: normal 1em/1.375em Georgia,Times,"Times New Roman",serif;
+	}
+	
+	form div {
+		display: inline;
+		float: left;
+		margin: 0 0 0 15px;
+		min-height: 1.5em;
+		padding: 0 15px 0 0;
+		position: relative;
+		}
+		
+	form div#key-wrapper {
+		margin: 0;
+		}
+		
+	form div.radio {
+		margin-top: -0.2em;
+		
+		line-height: 1em;
+		}
+		
+	form div#buttons {
+		clear: both;
+		display: block;
+		float: none;
+		padding: 0.5em 0 0;
+		
+		border: 0;
+		
+		font-size: 1.3em;
+		text-align: center;
+		}
+		
+	form div#guests-wrapper {
+		border: 0;
+		}
+		
+	form div#attending-wrapper {
+		padding-right: 0;
+		
+		border: 0;
+		}
+		
+	form #not-attending-wrapper {
+		border-right: 1px solid #fff;
+		}
+		
+	form .help {
+		left: 0;
+		margin: -7.7em 0 1em 0;
+		padding: 0.8em;
+		position: absolute;
+		top: 3em;
+		width: 15em;
+		z-index: 1000;
+		
+		background-color: #fff;
+		border-radius: 0.3em;
+		-webkit-border-radius: 0.3em;
+		-moz-border-radius: 0.3em;
+		
+		font-size: 0.6875em;
+		line-height: 1.375em;
+		}
+		
+	form .hide {
+		display: none;
+		}
+
+	.error {
+		display: block;
+		left: 0;
+		margin: 1.2em 0 1em 0;
+		padding: 0.8em 0.8em 0.8em 1.8em;
+		position: absolute;
+		width: 13.2em;
+		
+		background: #ffc url("../images/error.png") no-repeat 0.3em center;
+		border-radius: 0.3em;
+		-webkit-border-radius: 0.3em;
+		-moz-border-radius: 0.3em;
+
+		color: #f33;
+		font-size: 0.6875em;
+		font-weight: bold;
+		line-height: 1.375em;
+		}
+		
+	.down {
+		margin-top: -6em;
+		background-image: url("../images/error-down.png");
+		}
+	
+	.attending {
+		margin-left: 3em;
+		}
+
+} /* END MEDIA: screen */
+
+
+
+/**
+ *	@section	Typography
+ */
+@media screen,print {
+
+h1 {
+	margin: 0 0 35px -62px;
+	padding: 0;
+	}
+	
+p {
+	margin: 0 0 1.375em 0;
+	padding: 0;
+	
+	font-size: 1.5em;
+	line-height: 1.375em;
+	}
+
+.details {
+	margin: 0;
+	padding: 0;
+	
+	font-size: 1em;
+	line-height: 1.375em;
+	}
+	
+} /* END MEDIA: screen,print */
+
+
+
+/**
+ *	@section	Images
+ */
+@media screen,print {
+
+img {
+	margin: 0;
+	padding: 0;
+	
+	border: 0;
+	}
+	
+#date {
+	height: 55px;
+	margin: 0 0 25px -62px;
+	padding: 0;
+	width: 470px;
+	}
+	
+} /* END MEDIA: screen,print */
