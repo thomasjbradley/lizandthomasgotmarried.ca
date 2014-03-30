@@ -1,196 +1,196 @@
 /**
- *	lizandthomasaregettingmarried.ca
- *	Primary Screen and Print Styles
- *	@media		screen,print
- *	
- *	@project	lizandthomasaregettingmarried.ca
- *	@author		Thomas J Bradley <theman@thomasjbradley.ca>
- *	@link		http://thomasjbradley.ca
- *	@copyright	MMIX- Thomas J Bradley
- *	
- *	@colordef	#8f87be; purple, background
- *	@colordef	#98cdcd; aqua, background
- *	@colordef	#acd2a1; green, background
+ *  lizandthomasaregettingmarried.ca
+ *  Primary Screen and Print Styles
+ *  @media    screen,print
+ *
+ *  @project  lizandthomasaregettingmarried.ca
+ *  @author   Thomas J Bradley <theman@thomasjbradley.ca>
+ *  @link   http://thomasjbradley.ca
+ *  @copyright  MMIX- Thomas J Bradley
+ *
+ *  @colordef #8f87be; purple, background
+ *  @colordef #98cdcd; aqua, background
+ *  @colordef #acd2a1; green, background
  */
 
 
 /**
- *	@section	General
+ *  @section  General
  */
 @media screen,print {
 
 body {
-	margin: 0;
-	padding: 0;
-	
-	background: #8f87be url("../images/bg-purple.gif") repeat left top;
-	
-	color: #fff;
-	font: normal 100.01%/137.5% Georgia,Times,"Times New Roman",serif;	}
-	
+  margin: 0;
+  padding: 0;
+
+  background: #8f87be url("../images/bg-purple.gif") repeat left top;
+
+  color: #fff;
+  font: normal 100.01%/137.5% Georgia,Times,"Times New Roman",serif;  }
+
 }
 
 
 /**
- *	@section	Layout
+ *  @section  Layout
  */
 @media screen {
 
 #section {
-	margin: 0 auto;
-	padding: 0;
-	position: relative;
-	width: 1010px;
-	}
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 1010px;
+  }
 
 #graphics {
-	display: inline;
-	float: left;
-	height: 285px;
-	margin: 150px 0 0 0;
-	padding: 0;
-	width: 510px;
-	}
-	
-	#graphics a {
-		display: inline;
-		float: left;
-		margin: 0;
-		padding: 0;
-		}
-		
-	#liz {
-		height: 300px;
-		width: 285px;
-		}
+  display: inline;
+  float: left;
+  height: 285px;
+  margin: 150px 0 0 0;
+  padding: 0;
+  width: 510px;
+  }
 
-	#thomas {
-		height: 300px;
-		width: 225px;
-		}
-	
+  #graphics a {
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+    }
+
+  #liz {
+    height: 300px;
+    width: 285px;
+    }
+
+  #thomas {
+    height: 300px;
+    width: 225px;
+    }
+
 #content {
-	display: inline;
-	float: right;
-	margin: 60px 0 0 0;
-	padding: 0 0 0 62px;
-	width: 408px;
-	}
+  display: inline;
+  float: right;
+  margin: 60px 0 0 0;
+  padding: 0 0 0 62px;
+  width: 408px;
+  }
 
 }
 
 
 /**
- *	@section	Typography
+ *  @section  Typography
  */
 @media screen,print {
 
 h1 {
-	margin: 0 0 35px -62px;
-	padding: 0;
-	}
+  margin: 0 0 35px -62px;
+  padding: 0;
+  }
 
 }
 
 
 /**
- *	@section	Images
+ *  @section  Images
  */
 @media screen,print {
 
 img {
-	margin: 0;
-	padding: 0;
-	
-	border: 0;
-	}
-	
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  }
+
 #date {
-	height: 55px;
-	margin: 0 0 25px -62px;
-	padding: 0;
-	width: 470px;
-	}
-	
+  height: 55px;
+  margin: 0 0 25px -62px;
+  padding: 0;
+  width: 470px;
+  }
+
 }
 
 /**
- *	@section	Misc
+ *  @section  Misc
  */
 
 @media screen,print {
 
 #photos {
-	clear: both;
-	margin: 0;
-	padding: 45px 0 45px;
-	}
+  clear: both;
+  margin: 0;
+  padding: 45px 0 45px;
+  }
 
 .scroll-wrap {
-	margin: 0;
-	overflow: hidden;
-	padding-left: 35px;
-	}
+  margin: 0;
+  overflow: hidden;
+  padding-left: 35px;
+  }
 
 .js-active .scroll-wrap {
-	position: relative;
-	}
+  position: relative;
+  }
 
 .js-active .scrollable {
-	height: 500px;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-	position: relative;
-	width: 100%;
-	
-	background-color: rgba(0,0,0,0.5);
-	}
-	
-	.scrollable ul {
-		margin: 0;
-		padding: 0;
-		
-		list-style-type: none;
-		}
-	
-	.js-active .scrollable ul {
-		left: 0;
-		position: absolute;
-		width: 20000em;
-		}
-		
-		.scrollable ul li {
-			display: inline;
-			float: left;
-			height: 500px;
-			margin: 0 5px 5px 5px;
-			padding: 0;
-			position: relative;
-			}
-		
-		.js-active .scrollable li {
-			display: inline;
-			float: left;
-			margin: 0;
-			
-			border: 0;
-			opacity: 0.9;
-			}
-			
-		.js-active .scrollable li.active,
-		.js-active .scrollable li:hover {
-			opacity: 1;
-			}
-		
-		.js-active .scrollable img {
-			cursor: pointer;
-			}
+  height: 500px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+
+  background-color: rgba(0,0,0,0.5);
+  }
+
+  .scrollable ul {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+    }
+
+  .js-active .scrollable ul {
+    left: 0;
+    position: absolute;
+    width: 20000em;
+    }
+
+    .scrollable ul li {
+      display: inline;
+      float: left;
+      height: 500px;
+      margin: 0 5px 5px 5px;
+      padding: 0;
+      position: relative;
+      }
+
+    .js-active .scrollable li {
+      display: inline;
+      float: left;
+      margin: 0;
+
+      border: 0;
+      opacity: 0.9;
+      }
+
+    .js-active .scrollable li.active,
+    .js-active .scrollable li:hover {
+      opacity: 1;
+      }
+
+    .js-active .scrollable img {
+      cursor: pointer;
+      }
 
 a#prev,
 a#next {
-	display: none;
-	}
+  display: none;
+  }
 
 .js-active a#prev,
 .js-active a#prev:link,
@@ -198,85 +198,85 @@ a#next {
 .js-active a#next,
 .js-active a#next:link,
 .js-active a#next:visited {
-	display: block;
-	height: 500px;
-	left: 0;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	top: 0;
-	width: 40px;
-	z-index: 100;
-	
-	background-color: #fff;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-	-moz-border-radius-topright: 5px;
-	-moz-border-radius-bottomright: 5px;
-	-webkit-border-top-right-radius: 5px;
-	-webkit-border-bottom-right-radius: 5px;
-	cursor: pointer;
-	
-	color: #2a2728;
-	}
+  display: block;
+  height: 500px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+  z-index: 100;
+
+  background-color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  cursor: pointer;
+
+  color: #2a2728;
+  }
 
 .js-active a#next,
 .js-active a#next:link,
 .js-active a#next:visited {
-	left: auto;
-	right: 0;
+  left: auto;
+  right: 0;
 
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-bottomleft: 5px;
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-bottom-left-radius: 5px;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-	-moz-border-radius-topright: 0;
-	-moz-border-radius-bottomright: 0;
-	-webkit-border-top-right-radius: 0;
-	-webkit-border-bottom-right-radius: 0;
-	}
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  }
 
 .js-active a#prev span,
 .js-active a#next span {
-	display: block;
-	height: 25px;
-	margin: 240px 0 0 12px;
-	padding: 0;
-	overflow: hidden;
-	width: 14px;
-	
-	background: transparent url("../images/arrow.gif") no-repeat left top;
-	
-	text-indent: -999em;
-	}
-	
+  display: block;
+  height: 25px;
+  margin: 240px 0 0 12px;
+  padding: 0;
+  overflow: hidden;
+  width: 14px;
+
+  background: transparent url("../images/arrow.gif") no-repeat left top;
+
+  text-indent: -999em;
+  }
+
 .js-active a#prev span {
-	background-position: left bottom;
-	}
-	
+  background-position: left bottom;
+  }
+
 .js-active a#prev:hover,
 .js-active a#prev:focus,
 .js-active a#prev:active,
 .js-active a#next:hover,
 .js-active a#next:focus,
 .js-active a#next:active {
-	background-color: #2a2726;
-	}
-	
+  background-color: #2a2726;
+  }
+
 .js-active a#prev:hover span,
 .js-active a#prev:focus span,
 .js-active a#prev:active span {
-	background-position: right bottom;
-	}
-	
+  background-position: right bottom;
+  }
+
 .js-active a#next:hover span,
 .js-active a#next:focus span,
 .js-active a#next:active span {
-	background-position: right top;
-	}
-	
+  background-position: right top;
+  }
+
 }
